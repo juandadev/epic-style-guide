@@ -1,4 +1,64 @@
 .inputs {
   grid-column: 1 / 5;
   grid-row: 4 / 5;
+  // display: grid;
+  // grid-template-columns: repeat(3, 1fr);
+  // grid-template-rows: repeat(2, auto);
+
+  &__text {
+    &__container {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &-text {
+    padding: 0.7rem 0.5rem;
+    width: 100%;
+    max-width: 500px;
+    color: var(--text_color);
+    font-family: var(--font_family);
+    font-weight: 700;
+    background-color: var(--background_color);
+    border: 3px solid var(--neutral_color_1);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+
+    &:focus {
+      outline: none;
+      border: 3px solid var(--primary_color_1);
+    }
+
+    &::placeholder {
+      color: var(--neutral_color_4);
+    }
+    transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    -webkit-transition: border 0.3s ease-in-out,
+      background-color 0.3s ease-in-out;
+    -moz-transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    -ms-transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    -o-transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+
+  &--active {
+    border: 3px solid var(--primary_color_1);
+  }
+
+  &--disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+    background-color: var(--neutral_color_1);
+    border: 3px solid var(--neutral_color_2);
+  }
+
+  &--success {
+    border: 3px solid var(--success-dark) !important;
+    background: url("https://imgur.com/RXJbxj4.png");
+  }
+
+  &--error {
+    border: 3px solid var(--error-dark) !important;
+  }
 }

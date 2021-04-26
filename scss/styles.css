@@ -5,6 +5,14 @@
   --background_color: #ffffff;
   --divider_color: #37a397;
   --alpha: 1;
+  --info-light: #bde5f8;
+  --info-dark: #00529b;
+  --success-light: #dff2bf;
+  --success-dark: #4f8a10;
+  --warning-light: #feefb3;
+  --warning-dark: #9f6000;
+  --error-light: #ffd2d2;
+  --error-dark: #d8000c;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
@@ -499,6 +507,73 @@
   grid-row: 4 / 5;
 }
 
+.inputs__text__container {
+  margin-bottom: 1.5rem;
+}
+
+.inputs-text {
+  padding: 0.7rem 0.5rem;
+  width: 100%;
+  max-width: 500px;
+  color: var(--text_color);
+  font-family: var(--font_family);
+  font-weight: 700;
+  background-color: var(--background_color);
+  border: 3px solid var(--neutral_color_1);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  -webkit-transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -webkit-transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -moz-transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -ms-transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.inputs-text:focus {
+  outline: none;
+  border: 3px solid var(--primary_color_1);
+}
+
+.inputs-text::-webkit-input-placeholder {
+  color: var(--neutral_color_4);
+}
+
+.inputs-text:-ms-input-placeholder {
+  color: var(--neutral_color_4);
+}
+
+.inputs-text::-ms-input-placeholder {
+  color: var(--neutral_color_4);
+}
+
+.inputs-text::placeholder {
+  color: var(--neutral_color_4);
+}
+
+.inputs--active {
+  border: 3px solid var(--primary_color_1);
+}
+
+.inputs--disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+  background-color: var(--neutral_color_1);
+  border: 3px solid var(--neutral_color_2);
+}
+
+.inputs--success {
+  border: 3px solid var(--success-dark) !important;
+  background: url("https://imgur.com/RXJbxj4.png");
+}
+
+.inputs--error {
+  border: 3px solid var(--error-dark) !important;
+}
+
 .links {
   -ms-grid-column: 4;
   -ms-grid-column-span: 1;
@@ -784,6 +859,27 @@
 
 .text--italic {
   font-style: italic;
+}
+
+.text--help {
+  margin: 0.3rem 0 0 0.5rem;
+  color: var(--neutral_color_4);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.text--success {
+  margin: 0.3rem 0 0 0.5rem;
+  color: var(--success-dark);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.text--error {
+  margin: 0.3rem 0 0 0.5rem;
+  color: var(--error-dark);
+  font-size: 0.8rem;
+  font-weight: 500;
 }
 
 * {

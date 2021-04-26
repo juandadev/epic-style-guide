@@ -1,5 +1,8 @@
 import { theme1, theme2, theme3, theme4, theme5 } from "./themes.js";
 
+const disabledButtons = document.getElementsByClassName("buttons--disabled");
+const disabledInputs = document.getElementsByClassName("inputs--disabled");
+
 function toggleDarkLight(theme) {
   let bgColor, textColor, dividerColor, alpha;
 
@@ -68,7 +71,11 @@ window.addEventListener("load", () => {
     .querySelector(".theme-dark")
     .addEventListener("click", () => toggleDarkLight("dark"));
 
-  document
-    .querySelector(".buttons--disabled")
-    .addEventListener("click", (e) => e.preventDefault);
+  Array(disabledButtons).forEach((item) =>
+    item[0].addEventListener("click", (e) => e.preventDefault)
+  );
+
+  Array(disabledInputs).forEach((item) =>
+    item[0].addEventListener("click", (e) => (e.target.disabled = true))
+  );
 });
