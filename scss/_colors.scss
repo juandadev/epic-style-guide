@@ -1,4 +1,169 @@
 .colors {
   grid-column: 1 / 2;
   grid-row: 2 / 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    margin-bottom: 1.5rem;
+
+    &__tones {
+      width: 20%;
+      height: 60px;
+      transition: background-color 0.3s ease-in-out;
+      -webkit-transition: background-color 0.3s ease-in-out;
+      -moz-transition: background-color 0.3s ease-in-out;
+      -ms-transition: background-color 0.3s ease-in-out;
+      -o-transition: background-color 0.3s ease-in-out;
+
+      &--neutrals {
+        width: 25%;
+        height: 75px;
+      }
+
+      &__principal {
+        width: 100%;
+        height: 120px;
+        transition: background-color 0.3s ease-in-out;
+        -webkit-transition: background-color 0.3s ease-in-out;
+        -moz-transition: background-color 0.3s ease-in-out;
+        -ms-transition: background-color 0.3s ease-in-out;
+        -o-transition: background-color 0.3s ease-in-out;
+      }
+    }
+
+    &__text {
+      margin-top: 0.5rem;
+    }
+  }
+
+  //   Primary Colors
+  &--primary1 {
+    background-color: var(--primary_color_1);
+  }
+  &--primary2 {
+    background-color: var(--primary_color_2);
+  }
+  &--primary3 {
+    background-color: var(--primary_color_3);
+  }
+  &--primary4 {
+    background-color: var(--primary_color_4);
+  }
+  &--primary5 {
+    background-color: var(--primary_color_5);
+  }
+  &--primary6 {
+    background-color: var(--primary_color_6);
+  }
+
+  //   Secondary Colors
+  &--secondary1 {
+    background-color: var(--secondary_color_1);
+  }
+  &--secondary2 {
+    background-color: var(--secondary_color_2);
+  }
+  &--secondary3 {
+    background-color: var(--secondary_color_3);
+  }
+  &--secondary4 {
+    background-color: var(--secondary_color_4);
+  }
+  &--secondary5 {
+    background-color: var(--secondary_color_5);
+  }
+  &--secondary6 {
+    background-color: var(--secondary_color_6);
+  }
+
+  //   Accent Colors #1
+  &--accent1-1 {
+    background-color: var(--accent_color_1_1);
+  }
+  &--accent1-2 {
+    background-color: var(--accent_color_1_2);
+  }
+  &--accent1-3 {
+    background-color: var(--accent_color_1_3);
+  }
+  &--accent1-4 {
+    background-color: var(--accent_color_1_4);
+  }
+  &--accent1-5 {
+    background-color: var(--accent_color_1_5);
+  }
+  &--accent1-6 {
+    background-color: var(--accent_color_1_6);
+  }
+
+  //   Accent Colors #2
+  &--accent2-1 {
+    background-color: var(--accent_color_2_1);
+  }
+  &--accent2-2 {
+    background-color: var(--accent_color_2_2);
+  }
+  &--accent2-3 {
+    background-color: var(--accent_color_2_3);
+  }
+  &--accent2-4 {
+    background-color: var(--accent_color_2_4);
+  }
+  &--accent2-5 {
+    background-color: var(--accent_color_2_5);
+  }
+  &--accent2-6 {
+    background-color: var(--accent_color_2_6);
+  }
+
+  //   Accent Colors #3
+  &--accent3-1 {
+    background-color: var(--accent_color_3_1);
+  }
+  &--accent3-2 {
+    background-color: var(--accent_color_3_2);
+  }
+  &--accent3-3 {
+    background-color: var(--accent_color_3_3);
+  }
+  &--accent3-4 {
+    background-color: var(--accent_color_3_4);
+  }
+  &--accent3-5 {
+    background-color: var(--accent_color_3_5);
+  }
+  &--accent3-6 {
+    background-color: var(--accent_color_3_6);
+  }
+
+  //   Neutral Colors
+  &--neutrals1 {
+    background-color: var(--neutral_color_1);
+  }
+  &--neutrals2 {
+    background-color: var(--neutral_color_2);
+  }
+  &--neutrals3 {
+    background-color: var(--neutral_color_3);
+  }
+  &--neutrals4 {
+    background-color: var(--neutral_color_4);
+  }
+  &--neutrals5 {
+    background-color: var(--neutral_color_5);
+  }
+  &--neutrals6 {
+    background-color: var(--neutral_color_6);
+  }
+  &--neutrals7 {
+    background-color: var(--neutral_color_7);
+  }
+  &--neutrals8 {
+    background-color: var(--neutral_color_8);
+  }
 }
