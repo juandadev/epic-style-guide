@@ -1,39 +1,36 @@
-function setTheme(theme) {
-  let bgColor, textColor, primaryColor;
+import { theme1, theme2, theme3, theme4, theme5 } from "./themes.js";
+
+function toggleDarkLight(theme) {
+  let bgColor, textColor;
 
   switch (theme) {
     case "light":
       bgColor = "#ffffff";
-      textColor = "#000000";
-      primaryColor = "#EF476F";
+      textColor = "#24292e";
       break;
 
     case "dark":
-      bgColor = "#000000";
+      bgColor = "#0d1117";
       textColor = "#ffffff";
-      primaryColor = "#FFC107";
       break;
 
     default:
       bgColor = "#ffffff";
-      textColor = "#000000";
+      textColor = "#24292e";
       break;
   }
 
   document
     .querySelector("html")
-    .style.setProperty("--background-color", bgColor);
-  document.querySelector("html").style.setProperty("--text-color", textColor);
-  document
-    .querySelector("html")
-    .style.setProperty("--primary-color", primaryColor);
+    .style.setProperty("--background_color", bgColor);
+  document.querySelector("html").style.setProperty("--text_color", textColor);
 }
 
 window.addEventListener("load", () => {
   document
-    .querySelector("#light")
-    .addEventListener("click", () => setTheme("light"));
+    .querySelector(".theme-light")
+    .addEventListener("click", () => toggleDarkLight("light"));
   document
-    .querySelector("#dark")
-    .addEventListener("click", () => setTheme("dark"));
+    .querySelector(".theme-dark")
+    .addEventListener("click", () => toggleDarkLight("dark"));
 });

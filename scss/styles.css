@@ -1,9 +1,156 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
 :root {
-  --font-family: "Poppins";
-  --text-color: #000000;
-  --background-color: #ffffff;
-  --primary-color: #ef476f;
+  --font_family: "Poppins";
+  --text_color: #24292e;
+  --background_color: #ffffff;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --primary_color_1: #264653;
+  --primary_color_2: #e4e8ea;
+  --primary_color_3: #aebabf;
+  --primary_color_4: #778b94;
+  --primary_color_5: #213d49;
+  --primary_color_6: #182c34;
+  --secondary_color_1: #2a9d8f;
+  --secondary_color_2: #e4f3f1;
+  --secondary_color_3: #afdad5;
+  --secondary_color_4: #7ac2b9;
+  --secondary_color_5: #25897d;
+  --secondary_color_6: #1a6259;
+  --accent_color_1_1: #e9c46a;
+  --accent_color_1_2: #fcf8ec;
+  --accent_color_1_3: #f7e9c7;
+  --accent_color_1_4: #f1daa2;
+  --accent_color_1_5: #ccac5d;
+  --accent_color_1_6: #927b42;
+  --accent_color_2_1: #f4a261;
+  --accent_color_2_2: #fef3eb;
+  --accent_color_2_3: #fbdcc4;
+  --accent_color_2_4: #f8c59c;
+  --accent_color_2_5: #d68e55;
+  --accent_color_2_6: #99653d;
+  --accent_color_3_1: #e76f51;
+  --accent_color_3_2: #fcede9;
+  --accent_color_3_3: #f6c9be;
+  --accent_color_3_4: #f0a592;
+  --accent_color_3_5: #ca6147;
+  --accent_color_3_6: #904533;
+  --neutral_color_1: #dfdfdf;
+  --neutral_color_2: #bfbfbf;
+  --neutral_color_3: #9f9f9f;
+  --neutral_color_4: #808080;
+  --neutral_color_5: #606060;
+  --neutral_color_6: #404040;
+  --neutral_color_7: #202020;
+  --neutral_color_8: #000000;
+}
+
+.themes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.themes__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 1rem;
+  width: 50px;
+  height: 50px;
+  border: 6px solid #ffffff;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  -webkit-box-shadow: 1px 1px 10px 0px rgba(36, 41, 46, 0.3);
+          box-shadow: 1px 1px 10px 0px rgba(36, 41, 46, 0.3);
+  cursor: pointer;
+}
+
+.themes__item .color1 {
+  border-radius: 100px 0 0 100px;
+  -webkit-border-radius: 100px 0 0 100px;
+  -moz-border-radius: 100px 0 0 100px;
+  -ms-border-radius: 100px 0 0 100px;
+  -o-border-radius: 100px 0 0 100px;
+}
+
+.themes__item .color2 {
+  border-radius: 0 100px 100px 0;
+  -webkit-border-radius: 0 100px 100px 0;
+  -moz-border-radius: 0 100px 100px 0;
+  -ms-border-radius: 0 100px 100px 0;
+  -o-border-radius: 0 100px 100px 0;
+}
+
+.themes__item .color1,
+.themes__item .color2 {
+  width: 50%;
+  height: 100%;
+}
+
+.themes__item.theme1 .color1 {
+  background-color: #264653;
+}
+
+.themes__item.theme1 .color2 {
+  background-color: #2a9d8f;
+}
+
+.themes__item.theme2 .color1 {
+  background-color: #e63946;
+}
+
+.themes__item.theme2 .color2 {
+  background-color: #f1faee;
+}
+
+.themes__item.theme3 .color1 {
+  background-color: #ef476f;
+}
+
+.themes__item.theme3 .color2 {
+  background-color: #ffd166;
+}
+
+.themes__item.theme4 .color1 {
+  background-color: #ffbe0b;
+}
+
+.themes__item.theme4 .color2 {
+  background-color: #fb5607;
+}
+
+.themes__item.theme5 .color1 {
+  background-color: #05668d;
+}
+
+.themes__item.theme5 .color2 {
+  background-color: #028090;
+}
+
+.themes__item.theme-light, .themes__item.theme-dark {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.themes__item.theme-light svg, .themes__item.theme-dark svg {
+  width: 70%;
+}
+
+.themes__item.theme-light svg path, .themes__item.theme-dark svg path {
+  fill: var(--text_color);
 }
 
 * {
@@ -14,32 +161,61 @@
 }
 
 html {
-  font-family: var(--font-family), sans-serif;
-  color: var(--text-color);
-  background-color: var(--background-color);
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   -moz-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   -ms-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  font-family: var(--font_family), sans-serif;
+  color: var(--text_color);
+  background-color: var(--background_color);
 }
 
-#dark,
-#light {
-  cursor: pointer;
-  transition: opacity 0.3s ease-in-out;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  -moz-transition: opacity 0.3s ease-in-out;
-  -ms-transition: opacity 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out;
+header,
+main,
+footer {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-#dark:hover,
-#light:hover {
-  opacity: 0.7;
+header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
-button {
-  background-color: var(--primary-color);
+@media (min-width: 576px) {
+  header,
+  main,
+  footer {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  header,
+  main,
+  footer {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  header,
+  main,
+  footer {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  header,
+  main,
+  footer {
+    max-width: 1140px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

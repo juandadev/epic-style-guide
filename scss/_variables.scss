@@ -1,6 +1,61 @@
 :root {
-  --font-family: "Poppins";
-  --text-color: #000000;
-  --background-color: #ffffff;
-  --primary-color: #ef476f;
+  --font_family: "Poppins";
+  --text_color: #24292e;
+  --background_color: #ffffff;
+
+  // Breakpoints
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+
+  // Primary Colors
+  --primary_color_1: #264653;
+  --primary_color_2: #e4e8ea;
+  --primary_color_3: #aebabf;
+  --primary_color_4: #778b94;
+  --primary_color_5: #213d49;
+  --primary_color_6: #182c34;
+
+  // Secondary Colors
+  --secondary_color_1: #2a9d8f;
+  --secondary_color_2: #e4f3f1;
+  --secondary_color_3: #afdad5;
+  --secondary_color_4: #7ac2b9;
+  --secondary_color_5: #25897d;
+  --secondary_color_6: #1a6259;
+
+  // Accent Colors #1
+  --accent_color_1_1: #e9c46a;
+  --accent_color_1_2: #fcf8ec;
+  --accent_color_1_3: #f7e9c7;
+  --accent_color_1_4: #f1daa2;
+  --accent_color_1_5: #ccac5d;
+  --accent_color_1_6: #927b42;
+
+  // Accent Colors #2
+  --accent_color_2_1: #f4a261;
+  --accent_color_2_2: #fef3eb;
+  --accent_color_2_3: #fbdcc4;
+  --accent_color_2_4: #f8c59c;
+  --accent_color_2_5: #d68e55;
+  --accent_color_2_6: #99653d;
+
+  // Accent Colors #3
+  --accent_color_3_1: #e76f51;
+  --accent_color_3_2: #fcede9;
+  --accent_color_3_3: #f6c9be;
+  --accent_color_3_4: #f0a592;
+  --accent_color_3_5: #ca6147;
+  --accent_color_3_6: #904533;
+
+  // Neutral Colors
+  --neutral_color_1: #dfdfdf;
+  --neutral_color_2: #bfbfbf;
+  --neutral_color_3: #9f9f9f;
+  --neutral_color_4: #808080;
+  --neutral_color_5: #606060;
+  --neutral_color_6: #404040;
+  --neutral_color_7: #202020;
+  --neutral_color_8: #000000;
 }
