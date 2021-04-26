@@ -48,17 +48,50 @@ header {
 
 .main {
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: 2fr 2fr 1fr 1fr;
   grid-template-rows: repeat(6, auto);
+  margin-bottom: 5rem;
 
   section {
     position: relative;
     padding: 1.5rem;
-    border: 2px solid var(--divider_color);
+    border: 1px solid var(--divider_color);
 
     &.colors {
-      border-top-width: 4px;
-      border-left-width: 4px;
+      border-top-width: 2px;
+      border-left-width: 2px;
+    }
+
+    &.typography {
+      border-top-width: 2px;
+      border-right-width: 2px;
+    }
+
+    &.links {
+      border-right-width: 2px;
+    }
+
+    &.inputs {
+      border-left-width: 2px;
+      border-right-width: 2px;
+    }
+
+    &.badges {
+      border-left-width: 2px;
+    }
+
+    &.tooltips {
+      border-bottom-width: 2px;
+    }
+
+    &.alerts {
+      border-right-width: 2px;
+      border-bottom-width: 2px;
+    }
+
+    &.loadings {
+      border-left-width: 2px;
+      border-bottom-width: 2px;
     }
   }
 
@@ -67,6 +100,7 @@ header {
     top: -1.4rem;
     left: 1rem;
     padding: 0.5rem;
+    width: fit-content;
     text-transform: uppercase;
     font-weight: 700;
     color: var(--divider_color);
@@ -76,22 +110,6 @@ header {
     -moz-transition: background-color 0.3s ease-in-out;
     -ms-transition: background-color 0.3s ease-in-out;
     -o-transition: background-color 0.3s ease-in-out;
-  }
-}
-
-.text {
-  font-size: 1rem;
-
-  &--light {
-    font-weight: 300;
-  }
-
-  &--medium {
-    font-weight: 500;
-  }
-
-  &--bold {
-    font-weight: 700;
   }
 }
 
