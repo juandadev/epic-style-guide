@@ -1,6 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
 @import "./_variables.scss";
+@import "./_alerts.scss";
+@import "./_badges.scss";
+@import "./_buttons.scss";
+@import "./_colors.scss";
+@import "./_inputs.scss";
+@import "./_links.scss";
+@import "./_loadings.scss";
 @import "./_themes.scss";
+@import "./_tooltips.scss";
+@import "./_typography.scss";
 
 * {
   margin: 0;
@@ -34,6 +43,12 @@ header {
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-bottom: 2rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(6, auto);
 }
 
 @media (min-width: 576px) {
