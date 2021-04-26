@@ -1,25 +1,28 @@
 import { theme1, theme2, theme3, theme4, theme5 } from "./themes.js";
 
 function toggleDarkLight(theme) {
-  let bgColor, textColor, dividerColor;
+  let bgColor, textColor, dividerColor, alpha;
 
   switch (theme) {
     case "light":
       bgColor = "#ffffff";
       textColor = "#24292e";
       dividerColor = "#37a397";
+      alpha = 1;
       break;
 
     case "dark":
       bgColor = "#0d1117";
       textColor = "#ffffff";
       dividerColor = "#ffffff";
+      alpha = 0.5;
       break;
 
     default:
       bgColor = "#ffffff";
       textColor = "#24292e";
       dividerColor = "#37a397";
+      alpha = 1;
       break;
   }
 
@@ -30,6 +33,7 @@ function toggleDarkLight(theme) {
   document
     .querySelector("html")
     .style.setProperty("--divider_color", dividerColor);
+  document.querySelector("html").style.setProperty("--alpha", alpha);
 }
 
 function switchTheme(theme) {
@@ -63,4 +67,8 @@ window.addEventListener("load", () => {
   document
     .querySelector(".theme-dark")
     .addEventListener("click", () => toggleDarkLight("dark"));
+
+  document
+    .querySelector(".buttons--disabled")
+    .addEventListener("click", (e) => e.preventDefault);
 });
