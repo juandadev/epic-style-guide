@@ -258,3 +258,45 @@
     -o-transform: translateX(0);
   }
 }
+
+@media (max-width: 1200px) {
+  .tooltips {
+    &--right {
+      right: -13rem;
+    }
+
+    &--left {
+      left: -13rem;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .tooltips {
+    grid-column: 1 / 3;
+    grid-row: 6 / 7;
+
+    &--right {
+      right: 0;
+    }
+
+    &--left {
+      left: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .tooltips {
+    grid-column: 1 / 2;
+    grid-row: 8 / 9;
+
+    &--right {
+      right: -6rem;
+    }
+
+    &--left {
+      left: -6rem;
+    }
+  }
+}

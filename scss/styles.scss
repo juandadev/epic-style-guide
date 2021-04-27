@@ -153,3 +153,125 @@ header {
     max-width: 1140px;
   }
 }
+
+@media (max-width: 992px) {
+  .main {
+    .wrapper {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(8, auto);
+    }
+
+    section {
+      position: relative;
+      padding: 1.5rem;
+      padding-bottom: 2.5rem;
+      border: 1px solid var(--divider_color);
+
+      &.colors {
+        border-width: 2px 2px 1px 2px;
+      }
+
+      &.typography {
+        border-width: 1px 2px;
+      }
+
+      &.buttons {
+        border-width: 1px 1px 1px 2px;
+      }
+
+      &.links {
+        border-width: 1px 2px 1px 1px;
+      }
+
+      &.inputs {
+        border-width: 1px 2px;
+      }
+
+      &.badges {
+        border-width: 1px 1px 1px 2px;
+      }
+
+      &.tooltips {
+        border-width: 1px 2px;
+      }
+
+      &.alerts {
+        border-width: 1px 2px 1px 1px;
+      }
+
+      &.loadings {
+        border-width: 1px 2px 2px 2px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem !important;
+    text-align: center;
+  }
+
+  .main {
+    .wrapper {
+      overflow-x: hidden;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(9, auto);
+    }
+
+    section {
+      position: relative;
+      padding: 1.5rem;
+      padding-bottom: 2.5rem;
+      border: 1px solid var(--divider_color);
+
+      &.colors {
+        border-width: 2px 2px 1px 2px;
+      }
+
+      &.typography {
+        border-width: 1px 2px;
+      }
+
+      &.buttons {
+        border-width: 1px 2px;
+      }
+
+      &.links {
+        border-width: 1px 2px;
+      }
+
+      &.inputs {
+        border-width: 1px 2px;
+      }
+
+      &.badges {
+        border-width: 1px 2px;
+      }
+
+      &.tooltips {
+        border-width: 1px 2px;
+      }
+
+      &.alerts {
+        border-width: 1px 2px;
+      }
+
+      &.loadings {
+        border-width: 1px 2px 2px 2px;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .main {
+    padding-right: 0;
+    padding-left: 0;
+
+    section {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+  }
+}

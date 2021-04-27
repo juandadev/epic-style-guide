@@ -110,3 +110,39 @@
     font-weight: 500;
   }
 }
+
+@media (max-width: 992px) {
+  .typography {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+
+    &__weights {
+      padding-bottom: 3rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .typography {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, auto);
+
+    &__weights {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+
+    &__headers {
+      padding-bottom: 3rem;
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+
+    &__body {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+    }
+  }
+}

@@ -38,3 +38,21 @@
     opacity: 0.7;
   }
 }
+
+@media (max-width: 992px) {
+  .links {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+
+    &__item {
+      margin-right: 1rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .links {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+}

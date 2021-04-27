@@ -167,3 +167,17 @@
     background-color: var(--neutral_color_8);
   }
 }
+
+@media (max-width: 992px) {
+  .colors {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .colors {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+}

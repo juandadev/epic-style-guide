@@ -5,11 +5,12 @@
   &__variant1 {
     position: relative;
     margin: 2rem auto;
-    width: 200px;
+    width: 150px;
     text-align: center;
 
     &__dot {
       position: relative;
+      margin: 0;
       margin-bottom: 1rem;
       width: 30px;
       height: 30px;
@@ -53,8 +54,8 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 319px;
-        max-width: 319px;
+        width: 300px;
+        max-width: 300px;
         height: 15px;
         background-color: var(--neutral_color_1);
         border-radius: 100px;
@@ -76,11 +77,11 @@
 
 @keyframes loadingDot {
   0% {
-    transform: translateX(170px);
-    -webkit-transform: translateX(170px);
-    -moz-transform: translateX(170px);
-    -ms-transform: translateX(170px);
-    -o-transform: translateX(170px);
+    transform: translateX(110px);
+    -webkit-transform: translateX(110px);
+    -moz-transform: translateX(110px);
+    -ms-transform: translateX(110px);
+    -o-transform: translateX(110px);
   }
 
   100% {
@@ -98,10 +99,40 @@
   }
 
   70% {
-    width: 319px;
+    width: 300px;
   }
 
   100% {
-    width: 319px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 992px) {
+  .loadings {
+    grid-column: 1 / 3;
+    grid-row: 7 / 8;
+
+    &__variant2__bar {
+      margin-left: 27%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .loadings {
+    grid-column: 1 / 2;
+    grid-row: 9 / 10;
+
+    &__variant2__bar {
+      margin-left: 17%;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .loadings {
+    &__variant2__bar {
+      margin-left: 0;
+    }
   }
 }

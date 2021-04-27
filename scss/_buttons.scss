@@ -6,7 +6,7 @@
   justify-content: space-evenly;
 
   &__item {
-    padding: 1rem 2rem;
+    padding: 0.6rem 1.6rem;
     width: fit-content;
     height: fit-content;
     font-family: var(--font_family), sans-serif;
@@ -176,5 +176,23 @@
   &--small {
     padding: 0.6rem 1.6rem;
     font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .buttons {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+
+    &__item {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .buttons {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
   }
 }
