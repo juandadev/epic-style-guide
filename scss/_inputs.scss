@@ -83,8 +83,43 @@
     position: relative;
     display: inline-block;
     margin-bottom: 0.5rem;
-    width: 100%;
+    width: 200px;
     height: 23px;
+
+    &.toggle-theme {
+      width: 235px;
+      height: 43px;
+
+      .inputs-toggle__label {
+        top: 0.5rem;
+        left: 90px;
+      }
+
+      .slider.round {
+        width: 78px;
+      }
+
+      .slider::before {
+        width: 35px;
+        height: 35px;
+        background: url("../svg/sun-solid.svg"), #ffffff;
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      input:checked + .slider::before {
+        background: url("../svg/moon-solid.svg"), #ffffff;
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: center;
+        transform: translateX(35px);
+        -webkit-transform: translateX(35px);
+        -moz-transform: translateX(35px);
+        -ms-transform: translateX(35px);
+        -o-transform: translateX(35px);
+      }
+    }
 
     &__label {
       position: absolute;

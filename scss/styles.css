@@ -887,8 +887,43 @@
   position: relative;
   display: inline-block;
   margin-bottom: 0.5rem;
-  width: 100%;
+  width: 200px;
   height: 23px;
+}
+
+.inputs-toggle.toggle-theme {
+  width: 235px;
+  height: 43px;
+}
+
+.inputs-toggle.toggle-theme .inputs-toggle__label {
+  top: 0.5rem;
+  left: 90px;
+}
+
+.inputs-toggle.toggle-theme .slider.round {
+  width: 78px;
+}
+
+.inputs-toggle.toggle-theme .slider::before {
+  width: 35px;
+  height: 35px;
+  background: url("../svg/sun-solid.svg"), #ffffff;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.inputs-toggle.toggle-theme input:checked + .slider::before {
+  background: url("../svg/moon-solid.svg"), #ffffff;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateX(35px);
+  -webkit-transform: translateX(35px);
+  -moz-transform: translateX(35px);
+  -ms-transform: translateX(35px);
+  -o-transform: translateX(35px);
 }
 
 .inputs-toggle__label {
@@ -1319,6 +1354,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: none !important;
   background-color: var(--background_color);
   transition: background-color 0.3s ease-in-out;
@@ -1326,6 +1364,10 @@
   -moz-transition: background-color 0.3s ease-in-out;
   -ms-transition: background-color 0.3s ease-in-out;
   -o-transition: background-color 0.3s ease-in-out;
+}
+
+.themes .toggle-theme {
+  margin-bottom: 0;
 }
 
 .themes.sticky {

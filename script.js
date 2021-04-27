@@ -90,13 +90,13 @@ window.addEventListener("load", () => {
   document
     .querySelector(".themes__item.theme5")
     .addEventListener("click", () => switchTheme(theme5));
-
-  document
-    .querySelector(".theme-light")
-    .addEventListener("click", () => toggleDarkLight("light"));
-  document
-    .querySelector(".theme-dark")
-    .addEventListener("click", () => toggleDarkLight("dark"));
+  document.querySelector(".toggle-theme").addEventListener("change", (e) => {
+    if (e.target.checked) {
+      toggleDarkLight("dark");
+    } else {
+      toggleDarkLight("light");
+    }
+  });
 
   Array(...disabledButtons).forEach((item) =>
     item.addEventListener("click", (e) => e.preventDefault)

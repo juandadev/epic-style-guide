@@ -3,6 +3,7 @@
   grid-row: 1 / 2;
   display: flex;
   justify-content: center;
+  align-items: center;
   border: none !important;
   background-color: var(--background_color);
   transition: background-color 0.3s ease-in-out;
@@ -10,6 +11,10 @@
   -moz-transition: background-color 0.3s ease-in-out;
   -ms-transition: background-color 0.3s ease-in-out;
   -o-transition: background-color 0.3s ease-in-out;
+
+  .toggle-theme {
+    margin-bottom: 0;
+  }
 
   &.sticky {
     position: fixed;
