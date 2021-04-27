@@ -9,6 +9,7 @@ const resetAlertsBtn = document.getElementById("resetAlerts");
 const tooltips = document.getElementsByClassName("tooltip");
 const themeBar = document.querySelector(".themes");
 const themeBarOffset = themeBar.offsetTop;
+const hamburger = document.querySelector(".themes__hamburger");
 
 function toggleDarkLight(theme) {
   let bgColor, textColor, dividerColor, alpha;
@@ -96,6 +97,9 @@ window.addEventListener("load", () => {
     } else {
       toggleDarkLight("light");
     }
+  });
+  hamburger.addEventListener("click", () => {
+    document.querySelector(".themes__collapse").classList.toggle("show");
   });
 
   Array(...disabledButtons).forEach((item) =>

@@ -1584,6 +1584,16 @@
   -o-transition: background-color 0.3s ease-in-out;
 }
 
+.themes__hamburger {
+  display: none;
+}
+
+.themes__collapse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .themes .toggle-theme {
   margin-bottom: 0;
 }
@@ -1698,6 +1708,87 @@
 
 .themes__item.theme-light svg path, .themes__item.theme-dark svg path {
   fill: var(--text_color);
+}
+
+.show {
+  display: block !important;
+  -webkit-animation-name: showThemes;
+          animation-name: showThemes;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@media (max-width: 768px) {
+  .themes {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .themes__hamburger {
+    display: block;
+    width: 35px;
+    height: 35px;
+  }
+  .themes__collapse {
+    display: none;
+    position: absolute;
+    top: 5rem;
+    left: 1rem;
+    z-index: 1;
+  }
+  .themes .toggle-theme {
+    width: 78px;
+  }
+  .themes .inputs-toggle__label {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .themes {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+}
+
+@-webkit-keyframes showThemes {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem);
+    -webkit-transform: translateY(-3rem);
+    -moz-transform: translateY(-3rem);
+    -ms-transform: translateY(-3rem);
+    -o-transform: translateY(-3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+}
+
+@keyframes showThemes {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem);
+    -webkit-transform: translateY(-3rem);
+    -moz-transform: translateY(-3rem);
+    -ms-transform: translateY(-3rem);
+    -o-transform: translateY(-3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
 }
 
 .tooltips {
