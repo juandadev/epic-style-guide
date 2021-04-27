@@ -40,10 +40,33 @@ footer {
   margin-left: auto;
 }
 
-header {
+.header {
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-bottom: 2rem;
+
+  &__brand {
+    cursor: default;
+    user-select: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.footer {
+  padding-bottom: 3rem;
+  text-align: center;
+
+  .buttons__item {
+    width: 100%;
+    font-size: 1.4rem;
+  }
+
+  &__text {
+    margin-top: 1rem;
+  }
 }
 
 .main {
@@ -165,7 +188,7 @@ header {
       position: relative;
       padding: 1.5rem;
       padding-bottom: 2.5rem;
-      border: 1px solid var(--divider_color);
+      border: 1px solid var(--accent_color_1_1);
 
       &.colors {
         border-width: 2px 2px 1px 2px;
@@ -223,7 +246,7 @@ header {
       position: relative;
       padding: 1.5rem;
       padding-bottom: 2.5rem;
-      border: 1px solid var(--divider_color);
+      border: 1px solid var(--accent_color_1_1);
 
       &.colors {
         border-width: 2px 2px 1px 2px;

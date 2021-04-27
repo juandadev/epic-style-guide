@@ -3,7 +3,6 @@
   --font_family: "Poppins";
   --text_color: #24292e;
   --background_color: #f9f9f9;
-  --divider_color: #37a397;
   --alpha: 1;
   --info-light: #bde5f8;
   --info-dark: #00529b;
@@ -1386,6 +1385,17 @@
   grid-row: 6 / 7;
 }
 
+.loadings.loadings--accent1 .loadings__variant1__label,
+.loadings.loadings--accent1 .loadings__variant2__label {
+  color: var(--accent_color_1_1);
+}
+
+.loadings.loadings--accent1 .loadings__variant1__dot, .loadings.loadings--accent1 .loadings__variant1__bar,
+.loadings.loadings--accent1 .loadings__variant2__dot,
+.loadings.loadings--accent1 .loadings__variant2__bar {
+  background-color: var(--accent_color_1_1);
+}
+
 .loadings__variant1 {
   position: relative;
   margin: 2rem auto;
@@ -1420,6 +1430,8 @@
 
 .loadings__variant2 {
   text-align: center;
+  width: 300px;
+  margin: auto;
 }
 
 .loadings__variant2__bar {
@@ -1534,9 +1546,6 @@
     -ms-grid-row-span: 1;
     grid-row: 7 / 8;
   }
-  .loadings__variant2__bar {
-    margin-left: 27%;
-  }
 }
 
 @media (max-width: 768px) {
@@ -1547,9 +1556,6 @@
     -ms-grid-row: 9;
     -ms-grid-row-span: 1;
     grid-row: 9 / 10;
-  }
-  .loadings__variant2__bar {
-    margin-left: 17%;
   }
 }
 
@@ -2412,10 +2418,36 @@ footer {
   margin-left: auto;
 }
 
-header {
+.header {
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-bottom: 2rem;
+}
+
+.header__brand {
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.footer {
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+.footer .buttons__item {
+  width: 100%;
+  font-size: 1.4rem;
+}
+
+.footer__text {
+  margin-top: 1rem;
 }
 
 .main {
@@ -2542,7 +2574,7 @@ header {
     position: relative;
     padding: 1.5rem;
     padding-bottom: 2.5rem;
-    border: 1px solid var(--divider_color);
+    border: 1px solid var(--accent_color_1_1);
   }
   .main section.colors {
     border-width: 2px 2px 1px 2px;
@@ -2589,7 +2621,7 @@ header {
     position: relative;
     padding: 1.5rem;
     padding-bottom: 2.5rem;
-    border: 1px solid var(--divider_color);
+    border: 1px solid var(--accent_color_1_1);
   }
   .main section.colors {
     border-width: 2px 2px 1px 2px;
