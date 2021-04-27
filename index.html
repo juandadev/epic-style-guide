@@ -510,8 +510,8 @@
       <section class="alerts">
         <p class="main__titles">Alerts</p>
 
-        <div class="alerts--primary">
-          <p class="medium--text">This is a default alert</p>
+        <div class="alert alerts--primary">
+          <p class="alerts__text text--bold">This is a default alert</p>
 
           <div class="alerts__close">
             <svg
@@ -532,8 +532,8 @@
           </div>
         </div>
 
-        <div class="alerts--secondary">
-          <p class="medium--text">This is a secondary alert</p>
+        <div class="alert alerts--secondary">
+          <p class="alerts__text text--bold">This is a secondary alert</p>
 
           <div class="alerts__close">
             <svg
@@ -554,8 +554,10 @@
           </div>
         </div>
 
-        <div class="alerts--accent1">
-          <p class="medium--text">This is an alert with accent color #1</p>
+        <div class="alert alerts--accent1">
+          <p class="alerts__text text--bold">
+            This is an alert with accent color #1
+          </p>
 
           <div class="alerts__close">
             <svg
@@ -576,8 +578,8 @@
           </div>
         </div>
 
-        <div class="alerts--info">
-          <p class="medium--text">This is an informative alert</p>
+        <div class="alert alerts--info">
+          <p class="alerts__text text--bold">This is an informative alert</p>
 
           <div class="alerts__close">
             <svg
@@ -598,8 +600,8 @@
           </div>
         </div>
 
-        <div class="alerts--success">
-          <p class="medium--text">This is a succes alert</p>
+        <div class="alert alerts--success">
+          <p class="alerts__text text--bold">This is a succes alert</p>
 
           <div class="alerts__close">
             <svg
@@ -620,8 +622,8 @@
           </div>
         </div>
 
-        <div class="alerts--warning">
-          <p class="medium--text">This is a warning alert</p>
+        <div class="alert alerts--warning">
+          <p class="alerts__text text--bold">This is a warning alert</p>
 
           <div class="alerts__close">
             <svg
@@ -642,10 +644,10 @@
           </div>
         </div>
 
-        <div class="alerts--error">
-          <p class="medium--text">This is a error alert</p>
+        <div class="alert alerts--error">
+          <p class="text--bold">This is an error alert</p>
 
-          <div class="alerts__close">
+          <div class="alerts__text alerts__close">
             <svg
               aria-hidden="true"
               focusable="false"
@@ -663,6 +665,10 @@
             </svg>
           </div>
         </div>
+
+        <button class="buttons__item buttons--default" id="resetAlerts">
+          Reset alerts
+        </button>
       </section>
 
       <section class="tooltips">
