@@ -6,6 +6,7 @@ const badges = document.getElementsByClassName("badge");
 const alerts = document.getElementsByClassName("alert");
 const alertCloseBtns = document.getElementsByClassName("alerts__close");
 const resetAlertsBtn = document.getElementById("resetAlerts");
+const tooltips = document.getElementsByClassName("tooltip");
 
 function toggleDarkLight(theme) {
   let bgColor, textColor, dividerColor, alpha;
@@ -19,6 +20,7 @@ function toggleDarkLight(theme) {
 
       Array(...badges).forEach((item) => item.classList.remove("dark"));
       Array(...alerts).forEach((item) => item.classList.remove("dark"));
+      Array(...tooltips).forEach((item) => item.classList.remove("dark"));
       break;
 
     case "dark":
@@ -29,6 +31,7 @@ function toggleDarkLight(theme) {
 
       Array(...badges).forEach((item) => item.classList.add("dark"));
       Array(...alerts).forEach((item) => item.classList.add("dark"));
+      Array(...tooltips).forEach((item) => item.classList.add("dark"));
       break;
 
     default:
@@ -39,6 +42,7 @@ function toggleDarkLight(theme) {
 
       Array(...badges).forEach((item) => item.classList.remove("dark"));
       Array(...alerts).forEach((item) => item.classList.remove("dark"));
+      Array(...tooltips).forEach((item) => item.classList.remove("dark"));
       break;
   }
 

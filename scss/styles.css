@@ -1505,6 +1505,10 @@
   border-right-color: transparent;
 }
 
+.tooltips--top.dark::after {
+  border-top-color: var(--neutral_color_1);
+}
+
 .tooltips--bottom {
   left: 0;
   right: 0;
@@ -1527,6 +1531,10 @@
   border-right-color: transparent;
 }
 
+.tooltips--bottom.dark::after {
+  border-bottom-color: var(--neutral_color_1);
+}
+
 .tooltips--left {
   top: -1rem;
   left: -10rem;
@@ -1546,6 +1554,10 @@
   border-right-color: transparent;
 }
 
+.tooltips--left.dark::after {
+  border-left-color: var(--neutral_color_1);
+}
+
 .tooltips--right {
   top: -1rem;
   right: -10rem;
@@ -1563,6 +1575,10 @@
   border-bottom-color: transparent;
   border-top-color: transparent;
   border-left-color: transparent;
+}
+
+.tooltips--right.dark::after {
+  border-right-color: var(--neutral_color_1);
 }
 
 .tooltip {
@@ -1591,6 +1607,11 @@
           box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.3);
   opacity: 0;
   z-index: 1;
+}
+
+.tooltip.dark {
+  color: var(--neutral_color_6);
+  background-color: var(--neutral_color_1);
 }
 
 @-webkit-keyframes tooltipTop {

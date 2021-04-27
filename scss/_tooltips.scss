@@ -63,6 +63,10 @@
       border-left-color: transparent;
       border-right-color: transparent;
     }
+
+    &.dark::after {
+      border-top-color: var(--neutral_color_1);
+    }
   }
 
   &--bottom {
@@ -85,6 +89,10 @@
       border-left-color: transparent;
       border-right-color: transparent;
     }
+
+    &.dark::after {
+      border-bottom-color: var(--neutral_color_1);
+    }
   }
 
   &--left {
@@ -104,6 +112,10 @@
       border-top-color: transparent;
       border-right-color: transparent;
     }
+
+    &.dark::after {
+      border-left-color: var(--neutral_color_1);
+    }
   }
 
   &--right {
@@ -122,6 +134,10 @@
       border-bottom-color: transparent;
       border-top-color: transparent;
       border-left-color: transparent;
+    }
+
+    &.dark::after {
+      border-right-color: var(--neutral_color_1);
     }
   }
 }
@@ -148,6 +164,11 @@
   box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.3);
   opacity: 0;
   z-index: 1;
+
+  &.dark {
+    color: var(--neutral_color_6);
+    background-color: var(--neutral_color_1);
+  }
 }
 
 @keyframes tooltipTop {
