@@ -4,6 +4,26 @@
   display: flex;
   justify-content: center;
   border: none !important;
+  background-color: var(--background_color);
+  transition: background-color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -moz-transition: background-color 0.3s ease-in-out;
+  -ms-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+
+  &.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 100vw;
+    z-index: 3;
+    box-shadow: 0 3px 15px 0 rgba(#24292e, 0.3);
+
+    + .wrapper {
+      padding-top: 100px;
+    }
+  }
 
   &__item {
     display: flex;

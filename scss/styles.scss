@@ -47,10 +47,13 @@ header {
 }
 
 .main {
-  display: grid;
-  grid-template-columns: 2fr 2fr 1fr 1fr;
-  grid-template-rows: repeat(6, auto);
   margin-bottom: 5rem;
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+  }
 
   section {
     position: relative;

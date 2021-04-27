@@ -7,6 +7,8 @@ const alerts = document.getElementsByClassName("alert");
 const alertCloseBtns = document.getElementsByClassName("alerts__close");
 const resetAlertsBtn = document.getElementById("resetAlerts");
 const tooltips = document.getElementsByClassName("tooltip");
+const themeBar = document.querySelector(".themes");
+const themeBarOffset = themeBar.offsetTop;
 
 function toggleDarkLight(theme) {
   let bgColor, textColor, dividerColor, alpha;
@@ -64,6 +66,14 @@ function switchTheme(theme) {
   }
 }
 
+function stickThemes() {
+  if (window.pageYOffset >= themeBarOffset) {
+    themeBar.classList.add("sticky");
+  } else {
+    themeBar.classList.remove("sticky");
+  }
+}
+
 window.addEventListener("load", () => {
   document
     .querySelector(".themes__item.theme1")
@@ -105,3 +115,7 @@ window.addEventListener("load", () => {
     );
   });
 });
+
+window.onscroll = function () {
+  stickThemes();
+};
