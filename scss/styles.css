@@ -1290,6 +1290,132 @@
   grid-row: 5 / 7;
 }
 
+.tooltips__text {
+  text-align: center;
+  text-decoration: underline;
+  cursor: default;
+}
+
+.tooltips__container {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.tooltips__container:hover .tooltip {
+  display: block;
+  opacity: 1;
+}
+
+.tooltips--top {
+  top: -5rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.tooltips--top::after {
+  content: "";
+  position: absolute;
+  bottom: -1.6rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0px;
+  height: 0px;
+  border: 13px solid var(--neutral_color_6);
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+.tooltips--bottom {
+  left: 0;
+  right: 0;
+  bottom: -5rem;
+  margin: auto;
+}
+
+.tooltips--bottom::after {
+  content: "";
+  position: absolute;
+  top: -1.6rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0px;
+  height: 0px;
+  border: 13px solid var(--neutral_color_6);
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+.tooltips--left {
+  top: -1rem;
+  left: -10rem;
+}
+
+.tooltips--left::after {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  right: -1.6rem;
+  margin: auto;
+  width: 0px;
+  height: 0px;
+  border: 13px solid var(--neutral_color_6);
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+}
+
+.tooltips--right {
+  top: -1rem;
+  right: -10rem;
+}
+
+.tooltips--right::after {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  left: -1.6rem;
+  margin: auto;
+  width: 0px;
+  height: 0px;
+  border: 13px solid var(--neutral_color_6);
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  padding: 0.5rem 1rem;
+  max-width: 250px;
+  color: var(--neutral_color_1);
+  text-align: center;
+  background-color: var(--neutral_color_6);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
 .typography {
   -ms-grid-column: 2;
   -ms-grid-column-span: 3;
