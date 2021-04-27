@@ -2,6 +2,7 @@ import { theme1, theme2, theme3, theme4, theme5 } from "./themes.js";
 
 const disabledButtons = document.getElementsByClassName("buttons--disabled");
 const disabledInputs = document.getElementsByClassName("inputs--disabled");
+const badges = document.getElementsByClassName("badge");
 
 function toggleDarkLight(theme) {
   let bgColor, textColor, dividerColor, alpha;
@@ -12,6 +13,8 @@ function toggleDarkLight(theme) {
       textColor = "#24292e";
       dividerColor = "#37a397";
       alpha = 1;
+
+      Array(...badges).forEach((item) => item.classList.remove("dark"));
       break;
 
     case "dark":
@@ -19,6 +22,8 @@ function toggleDarkLight(theme) {
       textColor = "#f9f9f9";
       dividerColor = "#f9f9f9";
       alpha = 0.5;
+
+      Array(...badges).forEach((item) => item.classList.add("dark"));
       break;
 
     default:
@@ -26,6 +31,8 @@ function toggleDarkLight(theme) {
       textColor = "#24292e";
       dividerColor = "#37a397";
       alpha = 1;
+
+      Array(...badges).forEach((item) => item.classList.remove("dark"));
       break;
   }
 
@@ -71,11 +78,11 @@ window.addEventListener("load", () => {
     .querySelector(".theme-dark")
     .addEventListener("click", () => toggleDarkLight("dark"));
 
-  Array(disabledButtons).forEach((item) =>
-    item[0].addEventListener("click", (e) => e.preventDefault)
+  Array(...disabledButtons).forEach((item) =>
+    item.addEventListener("click", (e) => e.preventDefault)
   );
 
-  Array(disabledInputs).forEach((item) =>
-    item[0].addEventListener("click", (e) => (e.target.disabled = true))
+  Array(...disabledInputs).forEach((item) =>
+    item.addEventListener("click", (e) => (e.target.disabled = true))
   );
 });
