@@ -12,9 +12,34 @@
     position: relative;
     margin-bottom: 1rem;
 
-    &:hover .tooltip {
-      display: block;
-      opacity: 1;
+    &:hover {
+      .tooltips--top {
+        animation-name: tooltipTop;
+        animation-duration: 0.3s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+      }
+
+      .tooltips--left {
+        animation-name: tooltipLeft;
+        animation-duration: 0.3s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+      }
+
+      .tooltips--right {
+        animation-name: tooltipRight;
+        animation-duration: 0.3s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+      }
+
+      .tooltips--bottom {
+        animation-name: tooltipBottom;
+        animation-duration: 0.3s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+      }
     }
   }
 
@@ -102,7 +127,7 @@
 }
 
 .tooltip {
-  display: none;
+  visibility: hidden;
   position: absolute;
   padding: 0.5rem 1rem;
   max-width: 250px;
@@ -115,12 +140,100 @@
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
   user-select: none;
-  opacity: 0;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.3);
+  opacity: 0;
   z-index: 1;
+}
+
+@keyframes tooltipTop {
+  0% {
+    visibility: visible;
+    opacity: 0;
+    transform: translateY(-4rem);
+    -webkit-transform: translateY(-4rem);
+    -moz-transform: translateY(-4rem);
+    -ms-transform: translateY(-4rem);
+    -o-transform: translateY(-4rem);
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+}
+
+@keyframes tooltipBottom {
+  0% {
+    visibility: visible;
+    opacity: 0;
+    transform: translateY(4rem);
+    -webkit-transform: translateY(4rem);
+    -moz-transform: translateY(4rem);
+    -ms-transform: translateY(4rem);
+    -o-transform: translateY(4rem);
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+}
+
+@keyframes tooltipLeft {
+  0% {
+    visibility: visible;
+    opacity: 0;
+    transform: translateX(-4rem);
+    -webkit-transform: translateX(-4rem);
+    -moz-transform: translateX(-4rem);
+    -ms-transform: translateX(-4rem);
+    -o-transform: translateX(-4rem);
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+
+@keyframes tooltipRight {
+  0% {
+    visibility: visible;
+    opacity: 0;
+    transform: translateX(4rem);
+    -webkit-transform: translateX(4rem);
+    -moz-transform: translateX(4rem);
+    -ms-transform: translateX(4rem);
+    -o-transform: translateX(4rem);
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
 }
