@@ -8,7 +8,7 @@ function toggleDarkLight(theme) {
 
   switch (theme) {
     case "light":
-      bgColor = "#ffffff";
+      bgColor = "#f9f9f9";
       textColor = "#24292e";
       dividerColor = "#37a397";
       alpha = 1;
@@ -16,13 +16,13 @@ function toggleDarkLight(theme) {
 
     case "dark":
       bgColor = "#0d1117";
-      textColor = "#ffffff";
-      dividerColor = "#ffffff";
+      textColor = "#f9f9f9";
+      dividerColor = "#f9f9f9";
       alpha = 0.5;
       break;
 
     default:
-      bgColor = "#ffffff";
+      bgColor = "#f9f9f9";
       textColor = "#24292e";
       dividerColor = "#37a397";
       alpha = 1;
