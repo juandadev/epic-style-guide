@@ -1610,7 +1610,7 @@
 }
 
 .themes.sticky + .wrapper {
-  padding-top: 100px;
+  padding-top: 114px;
 }
 
 .themes__item {
@@ -2435,7 +2435,7 @@ header {
   position: relative;
   padding: 1.5rem;
   padding-bottom: 2.5rem;
-  border: 1px solid var(--divider_color);
+  border: 1px solid var(--accent_color_1_1);
 }
 
 .main section.colors {
@@ -2490,7 +2490,7 @@ header {
   width: fit-content;
   text-transform: uppercase;
   font-weight: 700;
-  color: var(--divider_color);
+  color: var(--accent_color_1_1);
   background-color: var(--background_color);
   transition: background-color 0.3s ease-in-out;
   -webkit-transition: background-color 0.3s ease-in-out;
