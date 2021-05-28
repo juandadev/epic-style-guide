@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./scss/styles.css" />
+    <link rel="stylesheet" href="./scss/demo.css" />
+
+    <title>Epic Style Guide - Demo | Juan Daniel Martínez Navarro</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="header__brand headers h1">
+        <a href="./index.html">🎨</a> Epic Style Guide - Demo
+      </h1>
+    </header>
+
+    <main class="main">
+      <section class="themes">
+        <div class="themes__hamburger">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="bars"
+            class="svg-inline--fa fa-bars fa-w-14"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              fill="currentColor"
+              d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+            ></path>
+          </svg>
+        </div>
+
+        <div class="themes__collapse">
+          <div class="themes__item theme1">
+            <div class="color1"></div>
+
+            <div class="color2"></div>
+          </div>
+
+          <div class="themes__item theme2">
+            <div class="color1"></div>
+
+            <div class="color2"></div>
+          </div>
+
+          <div class="themes__item theme3">
+            <div class="color1"></div>
+
+            <div class="color2"></div>
+          </div>
+
+          <div class="themes__item theme4">
+            <div class="color1"></div>
+
+            <div class="color2"></div>
+          </div>
+
+          <div class="themes__item theme5">
+            <div class="color1"></div>
+
+            <div class="color2"></div>
+          </div>
+        </div>
+
+        <label class="inputs-toggle toggle-theme">
+          <span class="inputs-toggle__label">Light / Dark mode</span>
+
+          <input type="checkbox" />
+
+          <span class="slider round"></span>
+        </label>
+      </section>
+
+      <section class="demo">
+        <p class="main__titles">Cards</p>
+
+        <div class="card">
+          <div class="card__image">
+            <img
+              src="https://images.unsplash.com/photo-1619308126851-db26fc396fb8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+              alt="Aerial view of green and brown trees beside body of water during daytime photo"
+              title="Aerial view of green and brown trees beside body of water during daytime photo"
+            />
+          </div>
+
+          <div class="card__info">
+            <div class="card__info__item col-1">
+              <p class="card__info__item__title text--bold">Location</p>
+
+              <p class="card__info__item__text text--light">
+                Brookings, Brookings, United States
+              </p>
+            </div>
+
+            <div class="card__info__item col-2">
+              <p class="card__info__item__title text--bold">Author</p>
+
+              <p class="card__info__item__text text--light">Connor DeMolt</p>
+            </div>
+
+            <div class="card__info__item col-3">
+              Give a shoutout to
+              <a
+                href="https://unsplash.com/@connord4"
+                target="_blank"
+                referrerpolicy="no-referrer"
+                class="links__item links--primary"
+                >Connor DeMolt</a
+              >
+              on social media.
+
+              <a
+                class="buttons__item buttons--accent1"
+                href="https://unsplash.com/photos/EYlaFOsKJ2A"
+                target="_blank"
+                referrerpolicy="no-referrer"
+              >
+                View on Unsplash
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tooltips__container">
+          <div class="card card--image">
+            <div class="card__button">
+              <a
+                class="card__button__item"
+                href="https://unsplash.com/photos/pEHDHUHR8q0"
+                target="_blank"
+                referrerpolicy="no-referrer"
+              >
+                View on Unsplash
+              </a>
+            </div>
+          </div>
+
+          <div class="tooltip tooltips--top">
+            Photo by Brian Lundquist on Unsplash 🙌
+          </div>
+        </div>
+      </section>
+
+      <section class="more">
+        <p class="main__titles">More</p>
+
+        <div class="loadings loadings__variant1 loadings--accent1">
+          <div class="loadings__variant1__dot"></div>
+
+          <div class="loadings__variant1__label text--bold">
+            We'll be adding more stuff soon...
+          </div>
+        </div>
+      </section>
+
+      <div class="loadings loadings__variant2 loadings--accent1">
+        <div class="loadings__variant2__bar"></div>
+
+        <div class="loadings__variant2__label text--bold">Loading...</div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__text text--medium">
+        Made with 💚 by
+        <a href="https://juanda.dev" class="links__item links--primary"
+          >Juan Daniel Martínez</a
+        >
+      </p>
+    </footer>
+
+    <script src="./themeMenu.js" type="module"></script>
+  </body>
+</html>
