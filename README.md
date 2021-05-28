@@ -25,10 +25,16 @@
 <p align="center">
   <a href="#key-features">Key Features</a> •
   <a href="#how-to-use">How To Use</a> •
+<<<<<<< Updated upstream
   <a href="#download">Download</a> •
   <a href="#credits">Credits</a> •
   <a href="#related">Related</a> •
   <a href="#license">License</a>
+=======
+  <a href="#demo">Demo</a> •
+  <a href="#credits">Credits</a> •
+  <a href="#support">Support</a>
+>>>>>>> Stashed changes
 </p>
 
 ![screenshot](https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.gif)
@@ -55,6 +61,7 @@
 
 ## How To Use
 
+<<<<<<< Updated upstream
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
 ```bash
@@ -80,11 +87,23 @@ You can [download](https://github.com/amitmerchant1990/electron-markdownify/rele
 ## Emailware
 
 Markdownify is an [emailware](https://en.wiktionary.org/wiki/emailware). Meaning, if you liked using this app or it has helped you in any way, I'd like you send me an email at <bullredeyes@gmail.com> about anything you'd want to say about this software. I'd really appreciate it!
+=======
+This website was created to reinforce some fundamentals about HTML, CSS, and Javascript, but also to learn stuff like naming classes with [BEM architecture](http://getbem.com/introduction/) (maybe not the best, but think I did it well though) and learning for the first time a CSS preprocessor: [SASS](https://sass-lang.com/).
+
+You can simply download the `styles.css` file located in the `/sass` folder and start using it on your website.
+
+In the `index.html` file, you can view the examples for naming classes and implementing all these components.
+
+## Demo
+
+[Epic Style Guide](https://juanda.dev/epic-style-guide/)
+>>>>>>> Stashed changes
 
 ## Credits
 
 This software uses the following open source packages:
 
+<<<<<<< Updated upstream
 - [Electron](http://electron.atom.io/)
 - [Node.js](https://nodejs.org/)
 - [Marked - a markdown parser](https://github.com/chjj/marked)
@@ -96,22 +115,32 @@ This software uses the following open source packages:
 ## Related
 
 [markdownify-web](https://github.com/amitmerchant1990/markdownify-web) - Web version of Markdownify
+=======
+- [SASS](https://sass-lang.com/)
+- [Vercel](https://vercel.com/) • Deployment
+
+With the supervision of [Erik Ochoa](https://twitter.com/Elyager), Academic Coach at [Platzi Master](https://platzi.com/master/)
+>>>>>>> Stashed changes
 
 ## Support
 
 <a href="https://www.buymeacoffee.com/5Zn8Xh3l9" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
+<<<<<<< Updated upstream
 <p>Or</p>
 
 <a href="https://www.patreon.com/amitmerchant">
 	<img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
 </a>
 
+=======
+>>>>>>> Stashed changes
 ## You may also like...
 
 - [Pomolectron](https://github.com/amitmerchant1990/pomolectron) - A pomodoro app
 - [Correo](https://github.com/amitmerchant1990/correo) - A menubar/taskbar Gmail App for Windows and macOS
 
+<<<<<<< Updated upstream
 ## License
 
 MIT
@@ -121,3 +150,12 @@ MIT
 > [amitmerchant.com](https://www.amitmerchant.com) &nbsp;&middot;&nbsp;
 > GitHub [@amitmerchant1990](https://github.com/amitmerchant1990) &nbsp;&middot;&nbsp;
 > Twitter [@amit_merchant](https://twitter.com/amit_merchant)
+=======
+---
+
+> Juan Daniel Martínez &nbsp;&middot;&nbsp;
+> [juanda.dev](https://juanda.dev) &nbsp;&middot;&nbsp;
+> Frontend Developer &nbsp;&middot;&nbsp;
+> GitHub [@juandadev](https://github.com/juandadev) &nbsp;&middot;&nbsp;
+> Twitter [@juanda_dev_](https://twitter.com/juanda_dev_)
+>>>>>>> Stashed changes
